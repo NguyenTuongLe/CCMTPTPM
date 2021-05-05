@@ -1,5 +1,5 @@
 body{
-    max-width: 800px;
+    max-width: 1200px;
     margin: 40px auto;
     padding: 32px;
 
@@ -18,7 +18,7 @@ body{
 }  */
 
 .shadow-2xl {
-    min-width: 800px;
+    max-width: 1050px;
     margin: 20px auto;
     padding: 32px;
     background: white;
@@ -28,7 +28,7 @@ body{
 .cont {
     display: grid;
      grid-template-columns: repeat(2, 1fr);
-     grid-column-gap: 2em;
+     grid-column-gap: 1em;
 }
 
 .text-5xl{
@@ -40,11 +40,17 @@ body{
 .text-black {
     text-decoration: none;
 }
+
+.coffee-name{
+    color: #1d3557;
+    display: inline-block;
+    margin-top: -25px !important;
+}
+
 .review-votes {
 
 }
 .my-3{
-    color: red;
     line-height: 30px;
 }
 
@@ -61,16 +67,21 @@ h1{
 .font-bold{
     text-align: center;
     font-size: 48px;
-
+    margin-top: -10px;
 }
 .item{
       line-height: 40px;
-
+        color: #1d3557;
       /*text-align: center;*/
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-column-gap: 1em;
-      border-bottom: 0.5px dashed #1d3557;
+      padding-top: 15px;
+      /* border-bottom: 0.5px dashed #1d3557; */
+      /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
+.item:not(:first-child){
+    border-top: 0.5px outset #f7f3f5;
 }
 
 .item_menu {
@@ -80,13 +91,16 @@ h1{
 }
 
 .name {
-    font-size: 42px;
-    color: red;
+    font-size: 36px;
 }
 
-.price{
-    font-size: 30px;
-    color: red;
+.description{
+    font-size: 24px;
+    color: #a59aa0;
+}
+
+.price, .address, .vote{
+    font-size: 24px;
 }
 
 .comment {
@@ -107,6 +121,7 @@ h1{
 
 .result {
     color: #E27D60;
+    font-size: 80px;
 }
 
 .comment-again{
